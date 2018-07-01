@@ -81,6 +81,31 @@
                 android:lineSpacingExtra="8dp"
                 android:text="사과농장"
                 android:padding="@dimen/activity_search_toolbar_left_padding" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:lineSpacingExtra="8dp"
+                android:padding="@dimen/activity_search_toolbar_left_padding"
+                android:text="사과농장"
+                android:textSize="28sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="28sp"
+                android:lineSpacingExtra="8dp"
+                android:text="사과농장"
+                android:padding="@dimen/activity_search_toolbar_left_padding" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:lineSpacingExtra="8dp"
+                android:padding="@dimen/activity_search_toolbar_left_padding"
+                android:text="사과농장"
+                android:textSize="28sp" />
+
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -109,6 +134,7 @@
                 android:lineSpacingExtra="8dp"
                 android:text="사과농장"
                 android:padding="@dimen/activity_search_toolbar_left_padding" />
+
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -116,28 +142,50 @@
                 android:lineSpacingExtra="8dp"
                 android:text="사과농장"
                 android:padding="@dimen/activity_search_toolbar_left_padding" />
-            <TextView
+
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textSize="28sp"
-                android:lineSpacingExtra="8dp"
-                android:text="사과농장"
-                android:padding="@dimen/activity_search_toolbar_left_padding" />
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:textSize="28sp"
-                android:lineSpacingExtra="8dp"
-                android:text="사과농장"
-                android:padding="@dimen/activity_search_toolbar_left_padding" />
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:textSize="28sp"
-                android:lineSpacingExtra="8dp"
-                android:text="사과농장"
-                android:padding="@dimen/activity_search_toolbar_left_padding" />
+                android:orientation="horizontal"
+                >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/activity_search_toolbar_left_padding"
+                    android:layout_centerVertical="true"
+                    android:layout_weight="1"
+                    android:textAlignment="center"
+                    android:text="농장소개"
+
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_weight="1"
+                    android:textAlignment="center"
+                    android:text="농장위치"
+                    android:padding="@dimen/activity_search_toolbar_left_padding"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_weight="1"
+                    android:textAlignment="center"
+                    android:padding="@dimen/activity_search_toolbar_left_padding"
+                    android:text="농장후기" />
+
+
+            </LinearLayout>
+
         </LinearLayout>
+
+
+
+
 
     </android.support.v4.widget.NestedScrollView>
 
