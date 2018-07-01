@@ -7,14 +7,12 @@ import android.support.v4.app.Fragment
 import android.support.v7.app.AppCompatActivity
 import android.view.Menu
 import android.view.MenuItem
-<<<<<<< HEAD
 import android.view.View
 import com.youth.farm_volunteering.Home.FarmDetailLocation
 import com.youth.farm_volunteering.Home.FarmDetailReview
 import com.youth.farm_volunteering.Home.FarmDetailintroduce
-=======
 import android.widget.Toast
->>>>>>> 94b6e8f293fc9f216ea999e85050b513fad79825
+import com.youth.farm_volunteering.R.id.*
 
 import kotlinx.android.synthetic.main.activity_farm_detail.*
 
@@ -61,18 +59,15 @@ class FarmDetailActivity : AppCompatActivity(), View.OnClickListener {
         detail_price_tv.setText(intent.getStringExtra("farm_price"))
         detail_days_tv.setText(intent.getStringExtra("farm_days"))
 
-<<<<<<< HEAD
 
         addFragment(FarmDetailintroduce())
         farm_introduce.isSelected = true
         farm_introduce.setOnClickListener(this)
         farm_location.setOnClickListener(this)
         farm_review.setOnClickListener(this)
-=======
         detail_apply_btn.setOnClickListener{
             Toast.makeText(applicationContext, "신청버튼 누름", Toast.LENGTH_SHORT).show()
         }
->>>>>>> 94b6e8f293fc9f216ea999e85050b513fad79825
 
     }
 
@@ -118,5 +113,7 @@ class FarmDetailActivity : AppCompatActivity(), View.OnClickListener {
         farm_location.isSelected = false
         farm_review.isSelected = false
     }
+
+
 
 }
