@@ -12,8 +12,8 @@
         android:theme="@style/AppTheme">
         <activity
             android:name=".Main.MainActivity"
-            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
-            android:configChanges="orientation|screenSize">
+            android:configChanges="orientation|screenSize"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -26,10 +26,12 @@
         <activity
             android:name=".FarmDetailActivity"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
-        <activity android:name=".SignUp.SignupActivity"
+        <activity
+            android:name=".SignUp.SignupActivity"
+            android:screenOrientation="portrait"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar"
-            android:windowSoftInputMode="adjustPan|adjustResize"
-            android:screenOrientation="portrait"></activity>
+            android:windowSoftInputMode="adjustPan|adjustResize" />
+        <activity android:name=".SplashActivity"></activity>
     </application>
 
 </manifest>
