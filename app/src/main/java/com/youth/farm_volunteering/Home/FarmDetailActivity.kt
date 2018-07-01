@@ -25,6 +25,7 @@ class FarmDetailActivity : AppCompatActivity() {
         toolbar!!.title = " "
 
         toolbarImage.setImageResource(intent.getIntExtra("farm_img",0))
+
     }
 
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {
@@ -37,7 +38,7 @@ class FarmDetailActivity : AppCompatActivity() {
 
         return super.onCreateOptionsMenu(menu)
     }
-//
+
     override fun onOptionsItemSelected(item: MenuItem?): Boolean {
         when(item!!.itemId){
             R.id.menu_detail_bookmark -> {
