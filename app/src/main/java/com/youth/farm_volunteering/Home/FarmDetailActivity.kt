@@ -37,7 +37,7 @@ class FarmDetailActivity : AppCompatActivity() {
 
         return super.onCreateOptionsMenu(menu)
     }
-//
+
     override fun onOptionsItemSelected(item: MenuItem?): Boolean {
         when(item!!.itemId){
             R.id.menu_detail_bookmark -> {
