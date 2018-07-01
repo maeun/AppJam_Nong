@@ -203,5 +203,12 @@
 
     </android.support.v4.widget.NestedScrollView>
 
+    <Button
+        android:id="@+id/detail_apply_btn"
+        android:text="신청 하기"
+        android:background="@color/colorAccent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"/>
 
 </android.support.design.widget.CoordinatorLayout>

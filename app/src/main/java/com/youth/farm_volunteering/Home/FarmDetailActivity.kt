@@ -6,6 +6,7 @@ import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
 import android.view.Menu
 import android.view.MenuItem
+import android.widget.Toast
 
 import kotlinx.android.synthetic.main.activity_farm_detail.*
 
@@ -29,6 +30,11 @@ class FarmDetailActivity : AppCompatActivity() {
         detail_name_tv.setText(intent.getStringExtra("farm_name"))
         detail_price_tv.setText(intent.getStringExtra("farm_price"))
         detail_days_tv.setText(intent.getStringExtra("farm_days"))
+
+        detail_apply_btn.setOnClickListener{
+            Toast.makeText(applicationContext, "신청버튼 누름", Toast.LENGTH_SHORT).show()
+        }
+
     }
 
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {
