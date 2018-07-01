@@ -6,6 +6,7 @@ import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
 import android.view.Menu
 import android.view.MenuItem
+import android.view.View
 import android.widget.Toast
 
 import kotlinx.android.synthetic.main.activity_farm_detail.*
@@ -33,6 +34,11 @@ class FarmDetailActivity : AppCompatActivity() {
 
         detail_apply_btn.setOnClickListener{
             Toast.makeText(applicationContext, "신청버튼 누름", Toast.LENGTH_SHORT).show()
+            if(detail_apply_rv.visibility == View.GONE){
+            detail_apply_rv.visibility = View.VISIBLE}
+            else if(detail_apply_rv.visibility == View.VISIBLE){
+            detail_apply_rv.visibility = View.GONE}
+
         }
 
     }
@@ -57,5 +63,9 @@ class FarmDetailActivity : AppCompatActivity() {
         }
 
         return false
+    }
+
+    fun clickFloat(){
+
     }
 }
