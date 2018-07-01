@@ -6,8 +6,8 @@ import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
 import android.view.Menu
 import android.view.MenuItem
-import kotlinx.android.synthetic.main.activity_farm_detail.*
 
+import kotlinx.android.synthetic.main.activity_farm_detail.*
 
 class FarmDetailActivity : AppCompatActivity() {
 
@@ -25,17 +25,7 @@ class FarmDetailActivity : AppCompatActivity() {
         toolbar!!.title = " "
 
         toolbarImage.setImageResource(intent.getIntExtra("farm_img",0))
-
-
-
-        /*
-        chat_name_tv.text = intent.getStringExtra("name")
-        chat_profile_image.setImageResource(intent.getIntExtra("profile",0))
-        */
-
     }
-
-
 
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {
 
@@ -47,7 +37,7 @@ class FarmDetailActivity : AppCompatActivity() {
 
         return super.onCreateOptionsMenu(menu)
     }
-
+//
     override fun onOptionsItemSelected(item: MenuItem?): Boolean {
         when(item!!.itemId){
             R.id.menu_detail_bookmark -> {

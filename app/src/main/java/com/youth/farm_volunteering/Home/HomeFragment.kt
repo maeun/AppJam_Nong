@@ -68,10 +68,10 @@ class HomeFragment : Fragment() {
 
                 val FarmDetailIntent = Intent(context, FarmDetailActivity::class.java)
                 FarmDetailIntent.putExtra("farm_img",farmItem.farmPicture)
-//                FarmDetailIntent.putExtra("",farmItem.farmLocation)
-//                FarmDetailIntent.putExtra("",farmItem.farmName)
-//                FarmDetailIntent.putExtra("",farmItem.farmPrice)
-//                FarmDetailIntent.putExtra("",farmItem.farmDays)
+                FarmDetailIntent.putExtra("",farmItem.farmLocation)
+                FarmDetailIntent.putExtra("",farmItem.farmName)
+                FarmDetailIntent.putExtra("",farmItem.farmPrice)
+                FarmDetailIntent.putExtra("",farmItem.farmDays)
                 startActivity(FarmDetailIntent)
 
             }
