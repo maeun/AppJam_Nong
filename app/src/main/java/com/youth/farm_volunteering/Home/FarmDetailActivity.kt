@@ -6,6 +6,8 @@ import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
 import android.view.Menu
 import android.view.MenuItem
+import kotlinx.android.synthetic.main.activity_farm_detail.*
+
 
 class FarmDetailActivity : AppCompatActivity() {
 
@@ -21,6 +23,10 @@ class FarmDetailActivity : AppCompatActivity() {
 
         toolbar!!.setTitleTextColor(0xFF000000.toInt())
         toolbar!!.title = " "
+
+        toolbarImage.setImageResource(intent.getIntExtra("farm_img",0))
+
+
 
         /*
         chat_name_tv.text = intent.getStringExtra("name")
