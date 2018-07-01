@@ -25,6 +25,10 @@ class FarmDetailActivity : AppCompatActivity() {
         toolbar!!.title = " "
 
         toolbarImage.setImageResource(intent.getIntExtra("farm_img",0))
+        detail_farmLocation.setText(intent.getStringExtra("farm_location"))
+        detail_farmName.setText(intent.getStringExtra("farm_name"))
+        detail_farmPrice.setText(intent.getStringExtra("farm_price"))
+        detail_farmDays.setText(intent.getStringExtra("farm_days"))
     }
 
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {
