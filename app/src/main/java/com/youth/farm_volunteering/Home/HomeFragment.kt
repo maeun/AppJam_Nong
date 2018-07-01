@@ -1,5 +1,6 @@
 package com.youth.farm_volunteering
 
+import android.content.Intent
 import android.os.Bundle
 import android.support.v4.app.Fragment
 import android.view.LayoutInflater
@@ -64,6 +65,14 @@ class HomeFragment : Fragment() {
             override fun onItemClick(parent: AdapterView<*>?, view: View?, position: Int, id: Long) {
                 var farmItem : FarmGridData = farmGridAdapter!!.getItem(position) as FarmGridData
                 Toast.makeText(context,""+ farmItem.farmName+ "선택", Toast.LENGTH_SHORT).show()
+
+                val FarmDetailIntent = Intent(context, FarmDetailActivity::class.java)
+                FarmDetailIntent.putExtra("farm_img",farmItem.farmPicture)
+                FarmDetailIntent.putExtra("",farmItem.farmLocation)
+                FarmDetailIntent.putExtra("",farmItem.farmName)
+                FarmDetailIntent.putExtra("",farmItem.farmPrice)
+                FarmDetailIntent.putExtra("",farmItem.farmDays)
+                startActivity(FarmDetailIntent)
 
             }
 
