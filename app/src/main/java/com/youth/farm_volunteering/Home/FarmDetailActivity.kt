@@ -30,7 +30,7 @@ class FarmDetailActivity : AppCompatActivity() {
         detail_farmPrice.setText(intent.getStringExtra("farm_price"))
         detail_farmDays.setText(intent.getStringExtra("farm_days"))
     }
-
+//ddd
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {
 
         var menuInflater = getMenuInflater()
