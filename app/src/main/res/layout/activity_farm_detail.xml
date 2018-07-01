@@ -154,6 +154,7 @@
                 >
 
                 <TextView
+                    android:id="@+id/farm_introduce"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:padding="@dimen/activity_search_toolbar_left_padding"
@@ -161,9 +162,12 @@
                     android:layout_weight="1"
                     android:textAlignment="center"
                     android:text="농장소개"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:clickable="true"
 
                     />
                 <TextView
+                    android:id="@+id/farm_location"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_centerInParent="true"
@@ -171,24 +175,30 @@
                     android:textAlignment="center"
                     android:text="농장위치"
                     android:padding="@dimen/activity_search_toolbar_left_padding"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:clickable="true"
                     />
 
                 <TextView
+                    android:id="@+id/farm_review"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_alignParentRight="true"
                     android:layout_weight="1"
                     android:textAlignment="center"
                     android:padding="@dimen/activity_search_toolbar_left_padding"
-                    android:text="농장후기" />
+                    android:text="농장후기"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:clickable="true"
+                    />
 
 
             </LinearLayout>
 
             <FrameLayout
+                android:id="@+id/detail_frame"
                 android:layout_width="match_parent"
                 android:layout_height="100dp"
-                android:id="@+id/detail_frame"
                 android:padding="@dimen/activity_search_toolbar_left_padding"
                 >
 
