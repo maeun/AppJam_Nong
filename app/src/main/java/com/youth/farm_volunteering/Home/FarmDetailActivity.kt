@@ -21,7 +21,15 @@ class FarmDetailActivity : AppCompatActivity() {
 
         toolbar!!.setTitleTextColor(0xFF000000.toInt())
         toolbar!!.title = " "
+
+        /*
+        chat_name_tv.text = intent.getStringExtra("name")
+        chat_profile_image.setImageResource(intent.getIntExtra("profile",0))
+        */
+
     }
+
+
 
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {
 
