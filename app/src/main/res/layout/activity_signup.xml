@@ -65,7 +65,7 @@
         android:layout_height="wrap_content"
         android:background="@color/colorToolbar"
         android:gravity="center"
-        android:minHeight="?attr/actionBarSize"
+        android:minHeight="?android:attr/actionBarSize"
         app:contentInsetStart="0dp"
         app:popupTheme="@style/Theme.AppCompat.Light"
         app:title=' '>
